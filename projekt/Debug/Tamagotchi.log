@@ -1,0 +1,4 @@
+﻿  pet.cpp
+C:\Users\Maciek\Desktop\projekt\pet.cpp(45,16): warning C4244: "+=": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Maciek\Desktop\projekt\pet.cpp(46,17): warning C4244: "+=": konwersja z "double" do "int", możliwa utrata danych
+  Tamagotchi.vcxproj -> C:\Users\Maciek\Desktop\projekt\Debug\Tamagotchi.exe
