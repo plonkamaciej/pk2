@@ -1,0 +1,46 @@
+
+#include <iostream>
+#include <list>
+
+using namespace std;
+
+struct Z {
+    double re = 0;
+    double im = 0;
+};
+
+class zespolona {
+    Z* z;
+
+public:
+
+
+    zespolona(zespolona&& other) noexcept
+    {
+        z = other.z;
+        other.z = nullptr;
+    }
+
+    ~zespolona() { delete[] z; }
+
+    zespolona& operator=(zespolona& other)
+    {
+        z = other.z;
+        other.z = nullptr;
+        return *this;
+    }
+
+    zespolona& operator+=(zespolona& other);
+    zespolona& operator-(zespolona& other);
+    zespolona& operator+(zespolona& other) {
+    };
+};
+
+
+
+int main()
+{
+
+    list<zespolona>;
+}
+
