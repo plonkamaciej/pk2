@@ -3,11 +3,11 @@
 
 #include<iostream>
 #include<string>
-#include <stdlib.h>
+#include<stdlib.h>
 #include<fstream>
-#include <stdlib.h>
-#include <time.h> 
-
+#include<stdlib.h>
+#include<time.h> 
+#include<vector>
 
 
 using namespace std;

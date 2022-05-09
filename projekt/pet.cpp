@@ -1,5 +1,6 @@
 #include "header.h"
 #include "pet.h"
+#include "dress.h"
 
 void Pet::Set_name(string mName){
 	Name = mName;
@@ -12,6 +13,19 @@ void Pet::clear(){
 	is_Sick = 0;
 	Age = 0;
 	is_alive = 1;
+	//dress_ = dresses[0];
+	
+}
+
+ void Pet::operator --(int)
+{
+	Hunger = Hunger - 2;
+	if (Hunger < 0)
+		Hunger = 0;
+	Boredom = Boredom - 2;
+	if (Boredom < 0)
+		Boredom = 0;
+	
 }
 
 spet getinfo()
@@ -24,6 +38,7 @@ spet getinfo()
 	petinfo >> info.is_Sick;
 	petinfo >> info.Age;
 	petinfo >> info.is_alive;
+	//petinfo >> info.dress_;
 	petinfo.close();
 	return info;
 }
@@ -37,6 +52,7 @@ Pet::Pet()
 	is_Sick = info.is_Sick;
 	Age = info.Age;
 	is_alive = info.is_alive;
+	dress_ = info.dress_;
 }
 
 void Pet::PassTime(double time)
@@ -57,6 +73,15 @@ void Pet::DisplayStats()
 	cout << "Poziom znudzenia: " << Boredom << endl;
 	cout << "Chory: " << is_Sick << endl;
 	cout << "Wiek: " << GetAge() << endl;
+}
+
+void Pet::ChangeDress(vector<dress> dresses)
+{
+	cout << "wybierz stroj:";
+	for (size_t i = 0; i < dresses.size(); i++)
+	{
+		//cout << dresses[i] << endl;
+	}
 }
 
 int Pet::GetMood() const

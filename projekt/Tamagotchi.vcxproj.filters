@@ -36,6 +36,9 @@
     <ClCompile Include="RPS.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="dress.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">
@@ -60,6 +63,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="RPS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dress.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -98,6 +98,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="dress.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="menu.cpp" />
     <ClCompile Include="pet.cpp" />
@@ -107,6 +108,7 @@
     <ClCompile Include="Źródło.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="dress.h" />
     <ClInclude Include="extern.h" />
     <ClInclude Include="header.h" />
     <ClInclude Include="menu.h" />

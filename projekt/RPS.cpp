@@ -24,7 +24,7 @@ bool herowon;
 			if (enemy_weapon == 1) {
 				cout << "remis, atakujecie sie wzajemnie..." << endl;
 				enemy.Attacked(hero.ATT_ENEMY(hero.getATT()/2));
-				hero.Attacked(enemy.ATT_ENEMY(hero.getATT()/2));
+				hero.Attacked(enemy.ATT_ENEMY(enemy.getATT()/2));
 			}
 			if (enemy_weapon == 2) {
 				cout << "atakujesz przeciwnika!" << endl;
@@ -32,7 +32,7 @@ bool herowon;
 			}
 			if (enemy_weapon == 3) {
 				cout << "przeciwnik atakuje!" << endl;
-				hero.Attacked(enemy.ATT_ENEMY(hero.getATT()));
+				hero.Attacked(enemy.ATT_ENEMY(enemy.getATT()));
 			}
 			system("pause");
 			break;
@@ -40,7 +40,7 @@ bool herowon;
 			if (enemy_weapon == 2) {
 				cout << "remis, atakujecie sie wzajemnie..." << endl;
 				enemy.Attacked(hero.ATT_ENEMY(hero.getATT()/2));
-				hero.Attacked(enemy.ATT_ENEMY(hero.getATT()/2));
+				hero.Attacked(enemy.ATT_ENEMY(enemy.getATT()/2));
 			}
 			if (enemy_weapon == 3) {
 				cout << "atakujesz przeciwnika!" << endl;
@@ -48,7 +48,7 @@ bool herowon;
 			}
 			if (enemy_weapon == 1) {
 				cout << "przeciwnik atakuje!" << endl;
-				hero.Attacked(enemy.ATT_ENEMY(hero.getATT()));
+				hero.Attacked(enemy.ATT_ENEMY(enemy.getATT()));
 			}
 			system("pause");
 			break;
@@ -56,7 +56,7 @@ bool herowon;
 			if (enemy_weapon == 3) {
 				cout << "remis, atakujecie sie wzajemnie..." << endl;
 				enemy.Attacked(hero.ATT_ENEMY(hero.getATT()/2));
-				hero.Attacked(enemy.ATT_ENEMY(hero.getATT()/2));
+				hero.Attacked(enemy.ATT_ENEMY(enemy.getATT()/2));
 			}
 			if (enemy_weapon == 1) {
 				cout << "atakujesz przeciwnika!" << endl;
@@ -64,7 +64,7 @@ bool herowon;
 			}
 			if (enemy_weapon == 2) {
 				cout << "przeciwnik atakuje!" << endl;
-				hero.Attacked(enemy.ATT_ENEMY(hero.getATT()));
+				hero.Attacked(enemy.ATT_ENEMY(enemy.getATT()));
 			}
 			system("pause");
 			break;

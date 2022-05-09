@@ -5,7 +5,7 @@
 int przeciwnik::ATT_ENEMY(int ATT) {
 	int range = rand() % 2;
 	int tmp = ATT + range*ATT;
-	if (range) cout << "CRIT!!" << endl;
+	if (range == 2) cout << "CRIT!!" << endl;
 	return tmp;
 }
 

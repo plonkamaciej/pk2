@@ -1,4 +1,4 @@
-#include "header.h"
+﻿#include "header.h"
 #include "menu.h"
 #include "pet.h"
 #include "RPS.h"
@@ -63,10 +63,15 @@ int main()
 				srand(time(NULL));
 				RPS gra;
 				bool winner = gra.winner();
-				if (winner) cout << "wygrales POG" << endl;
+				if (winner) {
+					cout << "wygrales POG!!" << endl;
+					cout << "obnizowno statystyki peta!" << endl;
+					pet--;
+				}
 				else {
 					cout << "Przegrales" << endl;
 				}
+				pet.PassTime();
 			}
 			system("pause");
 			check();

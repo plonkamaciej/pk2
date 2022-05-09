@@ -1,4 +1,11 @@
-﻿  pet.cpp
-C:\Users\Maciek\Desktop\projekt\pet.cpp(45,16): warning C4244: "+=": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Maciek\Desktop\projekt\pet.cpp(46,17): warning C4244: "+=": konwersja z "double" do "int", możliwa utrata danych
+﻿  RPS.cpp
+  dress.cpp
+  main.cpp
+C:\Users\Maciek\Desktop\projekt\main.cpp(63,15): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+  menu.cpp
+  pet.cpp
+C:\Users\Maciek\Desktop\projekt\pet.cpp(61,16): warning C4244: "+=": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Maciek\Desktop\projekt\pet.cpp(62,17): warning C4244: "+=": konwersja z "double" do "int", możliwa utrata danych
+  pet_cs.cpp
+  Generowanie kodu...
   Tamagotchi.vcxproj -> C:\Users\Maciek\Desktop\projekt\Debug\Tamagotchi.exe
