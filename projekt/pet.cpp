@@ -13,7 +13,7 @@ void Pet::clear(){
 	is_Sick = 0;
 	Age = 0;
 	is_alive = 1;
-	//dress_ = dresses[0];
+	dress_ = dress("brak",0,0);
 	
 }
 
@@ -38,7 +38,9 @@ spet getinfo()
 	petinfo >> info.is_Sick;
 	petinfo >> info.Age;
 	petinfo >> info.is_alive;
-	//petinfo >> info.dress_;
+	petinfo >> info.sdress_.nazwa;
+	petinfo >> info.sdress_.hp;
+	petinfo >> info.sdress_.att;
 	petinfo.close();
 	return info;
 }
@@ -52,7 +54,7 @@ Pet::Pet()
 	is_Sick = info.is_Sick;
 	Age = info.Age;
 	is_alive = info.is_alive;
-	dress_ = info.dress_;
+	dress_.set(info.sdress_.nazwa, info.sdress_.hp, info.sdress_.att);
 }
 
 void Pet::PassTime(double time)
@@ -73,6 +75,7 @@ void Pet::DisplayStats()
 	cout << "Poziom znudzenia: " << Boredom << endl;
 	cout << "Chory: " << is_Sick << endl;
 	cout << "Wiek: " << GetAge() << endl;
+	cout << "Ubranie: " << GetDress() << endl;
 }
 
 void Pet::ChangeDress(vector<dress> dresses)
@@ -80,7 +83,7 @@ void Pet::ChangeDress(vector<dress> dresses)
 	cout << "wybierz stroj:";
 	for (size_t i = 0; i < dresses.size(); i++)
 	{
-		//cout << dresses[i] << endl;
+		cout << dresses[i] << endl;
 	}
 }
 
@@ -92,6 +95,11 @@ int Pet::GetMood() const
 string Pet::GetName() const
 {
 	return Name;
+}
+
+dress Pet::GetDress() const
+{
+	return dress_;
 }
 
 double Pet ::GetAge() const
@@ -170,5 +178,7 @@ void Pet::Zapis()
 	petinfo << is_Sick << endl;
 	petinfo << Age << endl;
 	petinfo << is_alive << endl;
+	petinfo << GetDress() << endl;
+
 	petinfo.close();
 }

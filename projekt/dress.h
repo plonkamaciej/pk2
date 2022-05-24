@@ -18,17 +18,16 @@ class dress
 
 public:
 	dress();
-	ostream& operator<<(ostream& stm_wy) {
-		stm_wy << nazwa << " " << hp << " " << att;
-		return stm_wy;
+	dress(string mnazwa, int mhp, int matt) {
+		nazwa = mnazwa;
+		hp = mhp;
+		att = matt;
 	}
 
-	istream& operator>>(istream& stm_we) {
-		stm_we >> nazwa;
-		stm_we >> hp;
-		stm_we >> att;
-		return stm_we;
-}
+	void set(string mnazwa, int mhp, int matt);
+
+	friend ostream& operator<<(ostream& os, const dress& dt);
+
 };
 
 #endif

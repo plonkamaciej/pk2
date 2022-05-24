@@ -14,7 +14,17 @@ vector<dress_> getinfod() {
 	return info;
 }
 
-dress::dress()
+dress::dress() {};
+
+void dress::set(string mnazwa, int mhp, int matt)
 {
-	
+	nazwa = mnazwa;
+	hp = mhp;
+	att = matt;
+};
+
+ostream& operator<<(ostream& os, const dress& dt)
+{
+	os << dt.nazwa << endl << dt.hp << endl << dt.att;
+	return os;
 }

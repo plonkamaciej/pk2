@@ -2,6 +2,6 @@
 #include "extern.h"
 
 pet_cs::pet_cs() {
-	 HP = 200;
-	 ATT = 25;
+	HP = 200;
+	ATT = 25;
 }

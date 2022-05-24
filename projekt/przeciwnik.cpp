@@ -3,9 +3,13 @@
 
 
 int przeciwnik::ATT_ENEMY(int ATT) {
-	int range = rand() % 2;
-	int tmp = ATT + range*ATT;
-	if (range == 2) cout << "CRIT!!" << endl;
+	int tmp = 0;
+	int range = rand() % 5;
+	if (range == 5) {
+		cout << "CRIT!!" << endl;
+		tmp = ATT * 2;
+	}
+	else tmp = ATT;
 	return tmp;
 }
 

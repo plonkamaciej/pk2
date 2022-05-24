@@ -12,7 +12,7 @@ struct spet
 	bool is_Sick = 0;
 	double Age = 0;
 	bool is_alive = 0;
-	dress dress_;
+	dress_ sdress_;
 };
 
 class Pet
@@ -39,6 +39,7 @@ public:
 	int GetMood() const;
 	double GetAge() const;
 	string GetName() const;
+	dress GetDress() const;
 	void Talk();
 	void Eat(int food = 4);
 	void Play(int fun = 4);

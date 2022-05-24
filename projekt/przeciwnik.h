@@ -7,8 +7,8 @@ class przeciwnik
 public:
 	przeciwnik();
 	int ATT_ENEMY(int ATT);
-	int getHP() const;
-	int getATT() const;
+	virtual int getHP() const;
+	virtual int getATT() const;
 	int Attacked(int ATT);
 };
 

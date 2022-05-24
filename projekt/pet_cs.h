@@ -2,8 +2,8 @@
 #include "przeciwnik.h"
 class pet_cs : public przeciwnik
 {
-	int HP = 200;
-	int ATT = 25;
+	int HP;
+	int ATT;
 
 public:
 	pet_cs();

@@ -101,6 +101,7 @@
     <ClCompile Include="dress.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="menu.cpp" />
+    <ClCompile Include="Node.cpp" />
     <ClCompile Include="pet.cpp" />
     <ClCompile Include="pet_cs.cpp" />
     <ClCompile Include="przeciwnik.cpp" />
@@ -113,6 +114,7 @@
     <ClInclude Include="header.h" />
     <ClInclude Include="menu.h" />
     <ClInclude Include="Nagłówek.h" />
+    <ClInclude Include="Node.h" />
     <ClInclude Include="pet.h" />
     <ClInclude Include="pet_cs.h" />
     <ClInclude Include="przeciwnik.h" />
