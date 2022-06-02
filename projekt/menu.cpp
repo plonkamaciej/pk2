@@ -3,6 +3,7 @@
 #include "extern.h"
 
 void menu::display_menu(){
+logs << "uruchomiono funkcje DRESS::SETDRESS" << endl;
 while(menu::opcja != 1) {
     system("CLS");
 
@@ -42,6 +43,7 @@ ___________                                           .__    .__
 }
 
 void menu::graj() {
+    logs << "uruchomiono funkcje MENU::GRAJ" << endl;
     std::cout << "Zaczynamy gre!" << std::endl;
     if ((pet.GetAge() > 10) || (pet.getSickness() && pet.GetMood() > 20)) {
         display_ending();
@@ -56,19 +58,23 @@ void menu::graj() {
 
 
 void menu::reset(){
-    
+    logs << "uruchomiono funkcje MENU::RESET" << endl;
     cout << "Czy jestes pewny?[Y/n]" << endl;
     char tmp;
     cin >> tmp;
-    if(tmp != 'n'){
+    if(tmp != 'n' || NULL){
         pet.clear();
         pet.Zapis();
      }
     
 }
-int menu::wyjdz(){ cout << "Wracaj szybko" << endl;exit(0);}
+int menu::wyjdz(){ cout << "Wracaj szybko" << endl;
+    logs << "----------- ZAMKNIECIE GRY" << endl;
+    exit(0);
+}
 
 void menu::display_ending() {
+    logs << "uruchomiono funkcje MENU::DISPLAY_ENDING" << endl;
     system("CLS");
 
     cout << R"(

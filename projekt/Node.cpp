@@ -1,8 +1,9 @@
 #include "Node.h"
+#include "extern.h"
 
 Node* push(Node* head, int key)
 {
-
+    logs << "uruchomiono funkcje NODE::PUSH" << endl;
     Node* node = new Node;
     node->key = key;
     node->next = head;
@@ -11,7 +12,7 @@ Node* push(Node* head, int key)
 
 Node* constructList(vector<int> const& keys)
 {
-
+    logs << "uruchomiono funkcje NODE::CONSTRUCTLIST" << endl;
     // vector<new_minigame> vgame
     //vgame.pushback()...
     //Node *head = constructList(vgame);
@@ -27,6 +28,7 @@ Node* constructList(vector<int> const& keys)
 
 void printList(Node* head)
 {
+    logs << "uruchomiono funkcje NODE::PRINTLIST" << endl;
     Node* ptr = head;
     while (ptr)
     {

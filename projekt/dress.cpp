@@ -1,4 +1,5 @@
 #include "dress.h"
+#include "extern.h"
 
 vector<dress_> getinfod() {
 	vector<dress_> info;
@@ -18,10 +19,19 @@ dress::dress() {};
 
 void dress::set(string mnazwa, int mhp, int matt)
 {
+	logs << "uruchomiono funkcje DRESS::SETDRESS" << endl;
 	nazwa = mnazwa;
 	hp = mhp;
 	att = matt;
 };
+
+int dress::dressHP() const {
+	return hp;
+};
+
+int dress::dressATT() const {
+	return att;
+}
 
 ostream& operator<<(ostream& os, const dress& dt)
 {

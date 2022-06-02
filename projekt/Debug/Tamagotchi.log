@@ -1,6 +1,7 @@
-﻿  dress.cpp
+﻿  main.cpp
+C:\Users\Maciek\Desktop\projekt\main.cpp(70,15): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
   pet.cpp
-C:\Users\Maciek\Desktop\projekt\pet.cpp(63,16): warning C4244: "+=": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Maciek\Desktop\projekt\pet.cpp(64,17): warning C4244: "+=": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Maciek\Desktop\projekt\pet.cpp(69,16): warning C4244: "+=": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Maciek\Desktop\projekt\pet.cpp(70,17): warning C4244: "+=": konwersja z "double" do "int", możliwa utrata danych
   Generowanie kodu...
   Tamagotchi.vcxproj -> C:\Users\Maciek\Desktop\projekt\Debug\Tamagotchi.exe

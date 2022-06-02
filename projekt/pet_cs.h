@@ -7,5 +7,9 @@ class pet_cs : public przeciwnik
 
 public:
 	pet_cs();
+	int getHP() const;
+	int getATT() const;
+	int Attacked(int ATT);
+	int ATT_ENEMY(int ATT);
 };
 

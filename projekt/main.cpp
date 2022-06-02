@@ -4,23 +4,28 @@
 #include "RPS.h"
 #include "extern.h"
 
+
+
+ofstream logs("log.txt");
 Pet pet;
 
 int main()
 {
-
+	logs << "----------- URUCHOMIENIE GRY" << endl;
 	menu menu1;
-
+	
+	
 	auto check = [&menu1]() {
-		if ((pet.GetAge() > 10) || (pet.getSickness() && pet.GetMood() > 20)) {
+		if ((pet.GetAge() > 10) || (pet.getSickness() && pet.GetMood() > 30)) {
 			menu1.display_ending();
 		}
 	};
 	
 	menu1.display_menu();
 	int choice;
-	if ((pet.GetAge() > 10) || (pet.getSickness() && pet.GetMood() > 20)) {
+	if ((pet.GetAge() > 10) || (pet.getSickness() && pet.GetMood() > 30)) {
 		menu1.display_ending();
+		
 	}
 	do
 	{
@@ -40,6 +45,7 @@ int main()
 		{
 		case 0:
 			cout << pet.GetName() << ": Good-bye!\n";
+			
 			pet.Zapis();
 
 			break;
@@ -56,6 +62,7 @@ int main()
 		case 3:
 			cout << "(1) zwykla zabawa" << endl;
 			cout << "(2) walka" << endl;
+			cout << "(3) przeciez peta" << endl;
 			int tmp;
 			cin >> tmp;
 			if(tmp == 1)pet.Play();
@@ -64,7 +71,7 @@ int main()
 				RPS gra;
 				bool winner = gra.winner();
 				if (winner) {
-					cout << "wygrales POG!!" << endl;
+					cout << "ZWYCIESTWO!!" << endl;
 					cout << "obnizowno statystyki peta!" << endl;
 					pet--;
 				}
@@ -73,8 +80,13 @@ int main()
 				}
 				pet.PassTime();
 			}
+			if (tmp == 3) {
+				pet.ChangeDress();
+				pet.PassTime();
+			}
 			system("pause");
 			check();
+			if (tmp != 1 && tmp != 2 && tmp != 3) break;
 			break;
 		case 4:
 			pet.HowOld();
@@ -96,5 +108,6 @@ int main()
 		}
 
 	} while (choice != 0);
+	logs.close();
 	return 0;
 }

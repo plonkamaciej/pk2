@@ -4,5 +4,6 @@
 #include"pet.h"
 
 extern Pet pet;
+extern ofstream logs;
 
 #endif

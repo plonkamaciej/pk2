@@ -46,9 +46,11 @@ public:
 	void Medicine(int medicine = 2);
 	void HowOld();
 	void DisplayStats();
-	void ChangeDress(vector<dress> dresses);
+	void ChangeDress();
 	void clear();
 	void operator -- (int);
+	int dressHP() const;
+	int dressATT() const;
 };
 
 #endif

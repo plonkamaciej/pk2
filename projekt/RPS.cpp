@@ -3,6 +3,7 @@
 #include "header.h"
 
 void RPS::Fmenu() {
+	logs << "uruchomiono funkcje RPS::FMENU" << endl;
 	system("CLS");
 	cout << "zycie peta: " << hero.getHP() << endl;
 	cout << "zycie przeciwnika: " << enemy.getHP() << endl;
@@ -13,6 +14,7 @@ void RPS::Fmenu() {
 }
 
 bool RPS::winner(){
+	logs << "uruchomiono funkcje RPS:WINNER" << endl;
 bool herowon;
 	 do {
 		int enemy_weapon = rand() % 3 + 1;

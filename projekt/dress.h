@@ -24,6 +24,8 @@ public:
 		att = matt;
 	}
 
+	int dressHP() const;
+	int dressATT() const;
 	void set(string mnazwa, int mhp, int matt);
 
 	friend ostream& operator<<(ostream& os, const dress& dt);
