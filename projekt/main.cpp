@@ -4,8 +4,6 @@
 #include "RPS.h"
 #include "extern.h"
 
-
-
 ofstream logs("log.txt");
 Pet pet;
 
@@ -23,14 +21,11 @@ int main()
 	
 	menu1.display_menu();
 	int choice;
-	if ((pet.GetAge() > 10) || (pet.getSickness() && pet.GetMood() > 30)) {
-		menu1.display_ending();
-		
-	}
+	
 	do
 	{
 		system("CLS");
-		cout << menu1.set_back() << std::endl;
+		cout << menu1.set_back() << endl;
 		cout << "\n0 - Wyjdz z gry\n";
 		cout << "1 - Porozmawiaj z petem\n";
 		cout << "2 - Nakarm peta\n";
@@ -62,7 +57,7 @@ int main()
 		case 3:
 			cout << "(1) zwykla zabawa" << endl;
 			cout << "(2) walka" << endl;
-			cout << "(3) przeciez peta" << endl;
+			cout << "(3) przebiez peta" << endl;
 			int tmp;
 			cin >> tmp;
 			if(tmp == 1)pet.Play();
@@ -72,11 +67,13 @@ int main()
 				bool winner = gra.winner();
 				if (winner) {
 					cout << "ZWYCIESTWO!!" << endl;
-					cout << "obnizowno statystyki peta!" << endl;
+					cout << "obnizowno glod peta oraz pozion znudzenia" << endl;
 					pet--;
 				}
 				else {
 					cout << "Przegrales" << endl;
+					cout << "Twoj pet jest chory" << endl;
+					pet.Set_sickness(1);
 				}
 				pet.PassTime();
 			}

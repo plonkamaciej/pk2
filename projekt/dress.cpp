@@ -25,6 +25,10 @@ void dress::set(string mnazwa, int mhp, int matt)
 	att = matt;
 };
 
+string dress::dressName() const {
+	return nazwa;
+};
+
 int dress::dressHP() const {
 	return hp;
 };
@@ -35,6 +39,6 @@ int dress::dressATT() const {
 
 ostream& operator<<(ostream& os, const dress& dt)
 {
-	os << dt.nazwa << endl << dt.hp << endl << dt.att;
+	os << dt.nazwa << " " << dt.hp << " " << dt.att;
 	return os;
 }

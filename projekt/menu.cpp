@@ -3,7 +3,7 @@
 #include "extern.h"
 
 void menu::display_menu(){
-logs << "uruchomiono funkcje DRESS::SETDRESS" << endl;
+logs << "uruchomiono funkcje MENU::DISPLAY_MENU" << endl;
 while(menu::opcja != 1) {
     system("CLS");
 
@@ -31,6 +31,7 @@ while(menu::opcja != 1) {
 }
 
 std::string menu::set_back(){
+    logs << "uruchomiono funkcje MENU::SET_BACK" << endl;
     std::string r = R"(
 ___________                                           .__    .__ 
 \__    ___/____    _____ _____     ____   ____   ____ |  |__ |__|
@@ -62,7 +63,7 @@ void menu::reset(){
     cout << "Czy jestes pewny?[Y/n]" << endl;
     char tmp;
     cin >> tmp;
-    if(tmp != 'n' || NULL){
+    if(tmp != 'n'){
         pet.clear();
         pet.Zapis();
      }
@@ -78,7 +79,7 @@ void menu::display_ending() {
     system("CLS");
 
     cout << R"(
-           (___)
+          (___)
    ____
  _\___ \  |\_/|
 \     \ \/ , , \ ___

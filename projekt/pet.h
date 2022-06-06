@@ -34,6 +34,7 @@ public:
 	
 	void PassTime(double time = 1);
 	void Set_name(string mName);
+	void Set_sickness(bool sick);
 	bool getSickness() const;
 	void Zapis();
 	int GetMood() const;
@@ -43,7 +44,7 @@ public:
 	void Talk();
 	void Eat(int food = 4);
 	void Play(int fun = 4);
-	void Medicine(int medicine = 2);
+	void Medicine();
 	void HowOld();
 	void DisplayStats();
 	void ChangeDress();

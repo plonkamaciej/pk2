@@ -1,6 +1,12 @@
+brak
+0
+0
 bluza
 5
 5
 tarcza
 20
 0
+kolczatka
+0
+10

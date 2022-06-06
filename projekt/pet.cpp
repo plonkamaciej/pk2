@@ -2,11 +2,16 @@
 #include "pet.h"
 #include "dress.h"
 #include "extern.h"
-#include "node.h"
+#include "list.h"
 
 void Pet::Set_name(string mName){
 	logs << "ustawiono imie peta" << endl;
 	Name = mName;
+}
+
+void Pet::Set_sickness(bool sick) {
+	logs << "ustawiono zdrowie peta" << endl;
+	is_Sick = sick;
 }
 
 void Pet::clear(){
@@ -103,15 +108,27 @@ void Pet::ChangeDress()
 		dresses.push_back(tmp);
 	}
 
-	Node* head;
-	head -> constructList(dresses);
+	list list;
 
-	cout << "wybierz stroj:";
 	for (size_t i = 0; i < dresses.size(); i++)
 	{
-		cout << dresses[i] << endl;
+		list.push(dresses[i]);
 	}
-	
+
+	cout << "wybierz stroj:" << endl;
+	list.printList();
+	cout << endl;
+	cout << "TWOJ WYBOR: ";
+	string wybor;
+	cin >> wybor;
+	for (size_t i = 0; i < list.size(); i++)
+	{
+		if (wybor == list[i].dressName())
+		{
+			dress_ = list[i];
+			break;
+		}
+	}
 }
 
 int Pet::GetMood() const
@@ -196,7 +213,7 @@ void Pet::Play(int fun)
 	PassTime();
 }
 
-void Pet::Medicine(int medicine)
+void Pet::Medicine()
 {
 	logs << "uruchomiono funkcje PET::MEDICINE" << endl;
 	cout << "Thanks!\n";

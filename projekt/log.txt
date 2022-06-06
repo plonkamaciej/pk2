@@ -2,16 +2,4 @@ konstruktor classy Pet
 uruchomiono funkcje PET::GETINFO
 uruchomiono funkcje DRESS::SETDRESS
 ----------- URUCHOMIENIE GRY
-uruchomiono funkcje DRESS::SETDRESS
-uruchomiono funkcje MENU::GRAJ
-uruchomiono funkcje PET::GETAGE
-uruchomiono funkcje PET::GETSICKNESS
-uruchomiono funkcje PET::GETAGE
-uruchomiono funkcje PET::GETAGE
-uruchomiono funkcje PET::GETSICKNESS
-uruchomiono funkcje PET::CHANGEDRESS
-uruchomiono funkcje DRESS::SETDRESS
-uruchomiono funkcje DRESS::SETDRESS
-uruchomiono funkcje PET::PASSTIME
-uruchomiono funkcje PET::GETAGE
-uruchomiono funkcje PET::GETSICKNESS
+uruchomiono funkcje MENU::DISPLAY_MENU

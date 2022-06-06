@@ -23,7 +23,8 @@ public:
 		hp = mhp;
 		att = matt;
 	}
-
+	
+	string dressName() const;
 	int dressHP() const;
 	int dressATT() const;
 	void set(string mnazwa, int mhp, int matt);
