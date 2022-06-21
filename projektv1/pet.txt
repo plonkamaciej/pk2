@@ -1,0 +1,8 @@
+siema
+3
+3
+1
+0.3
+1
+kolczatka 0 10
+2

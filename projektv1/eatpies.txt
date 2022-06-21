@@ -1,0 +1,3 @@
+mieso 4
+jaszczurka 3
+woda 2
