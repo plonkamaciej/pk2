@@ -55,7 +55,7 @@ void game(T pet, menu menu1){
 				bool winner = gra.winner();
 				if (winner) {
 					cout << "ZWYCIESTWO!!" << endl;
-					cout << "obnizowno glod peta oraz pozion znudzenia" << endl;
+					cout << "obnizowno glod peta oraz poziom znudzenia" << endl;
 					pet--;
 				}
 				else {
