@@ -1,3 +1,9 @@
 ﻿  main.cpp
-C:\Users\Maciek\Desktop\projekt\main.cpp(65,15): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+C:\Users\Maciek\Desktop\projekt\main.cpp(119,12): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+C:\Users\Maciek\Desktop\projekt\main.cpp(52,15): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+C:\Users\Maciek\Desktop\projekt\main.cpp(125): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „void game<kot>(T,menu)” funkcji szablon
+          with
+          [
+              T=kot
+          ]
   Tamagotchi.vcxproj -> C:\Users\Maciek\Desktop\projekt\Debug\Tamagotchi.exe

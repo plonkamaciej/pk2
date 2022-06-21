@@ -1,7 +1,8 @@
-test
+siema
 3
-2
-0
-3.8
+3
 1
-tarcza 20 0
+0.3
+1
+kolczatka 0 10
+2

@@ -6,9 +6,9 @@ class przeciwnik
 
 public:
 	przeciwnik();
-	int ATT_ENEMY(int ATT);
+	virtual int ATT_ENEMY(int ATT);
 	virtual int getHP() const;
 	virtual int getATT() const;
-	int Attacked(int ATT);
+	virtual int Attacked(int ATT);
 };
 

@@ -1,6 +1,7 @@
-#pragma once
-#include "header.h"
 #include "dress.h"
+#include "header.h"
+#include "extern.h"
+
 #ifndef PET_H
 #define PET_H
 
@@ -13,11 +14,12 @@ struct spet
 	double Age = 0;
 	bool is_alive = 0;
 	dress_ sdress_;
+	int typ = 0;
 };
 
 class Pet
 {
-private:
+protected:
 
 	string Name;
 	int Hunger;
@@ -26,7 +28,7 @@ private:
 	double Age;
 	bool is_alive;
 	dress dress_;
-	
+	int typ;
 
 public:
 
@@ -35,14 +37,19 @@ public:
 	void PassTime(double time = 1);
 	void Set_name(string mName);
 	void Set_sickness(bool sick);
+	void Set_type(int mtyp);
 	bool getSickness() const;
 	void Zapis();
+	int Get_type() const;
+	int GetHunger() const;
+	int GetBoredom() const;
+	bool Getis_alive() const;
 	int GetMood() const;
 	double GetAge() const;
 	string GetName() const;
 	dress GetDress() const;
-	void Talk();
-	void Eat(int food = 4);
+	virtual void Talk();
+	virtual void Eat(int food = 4);
 	void Play(int fun = 4);
 	void Medicine();
 	void HowOld();
@@ -50,6 +57,7 @@ public:
 	void ChangeDress();
 	void clear();
 	void operator -- (int);
+	friend ostream& operator<<(ostream& os, const Pet& dt);
 	int dressHP() const;
 	int dressATT() const;
 };

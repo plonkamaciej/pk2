@@ -1,11 +1,6 @@
 #include "pet_cs.h"
 #include "extern.h"
-
-pet_cs::pet_cs() {
-	dress stats = pet.GetDress();
-	HP = 100 - pet.GetMood() + pet.dressHP();
-	ATT = 20 - pet.GetMood() + pet.dressATT();
-}
+#include "dress.h"
 
 
 int pet_cs::getHP() const {
@@ -17,6 +12,7 @@ int pet_cs::getATT() const {
 	logs << "uruchomiono funkcje pet_cs::GETATT" << endl;
 	return ATT;
 }
+
 
 int pet_cs::Attacked(int ATT) {
 	logs << "uruchomiono funkcje pet_cs::ATTACKED" << endl;
@@ -33,4 +29,12 @@ int pet_cs::ATT_ENEMY(int ATT) {
 	}
 	else tmp = ATT;
 	return tmp;
+}
+
+void pet_cs::set(Pet pet)
+{
+	dress stats = pet.GetDress();
+	this ->HP = 100 - pet.GetMood() + pet.dressHP();
+	this ->ATT = 25 - pet.GetMood() + pet.dressATT();
+
 }

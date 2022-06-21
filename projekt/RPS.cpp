@@ -2,6 +2,12 @@
 #include "extern.h"
 #include "header.h"
 
+
+void RPS::set_hero(Pet pet)
+{
+	hero.set(pet);
+}
+
 void RPS::Fmenu() {
 	logs << "uruchomiono funkcje RPS::FMENU" << endl;
 	system("CLS");

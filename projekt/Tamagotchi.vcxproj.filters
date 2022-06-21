@@ -45,6 +45,18 @@
     <ClCompile Include="list.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="kot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dinozaur.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pies.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="los.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">
@@ -78,6 +90,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dinozaur.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pies.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="los.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

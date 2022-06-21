@@ -1,15 +1,14 @@
 #include "header.h"
 #include "extern.h"
 
-using namespace std;
-
+template <typename T>
 class Node
 {
 public:
-    dress content;        
-    Node* next;    
+    T content;
+    Node<T>* next;    
    
-    Node(dress content)
+    Node(T content)
     {   
         logs << "kontruktor klasy Node" << endl;
         this->content = content;

@@ -98,27 +98,35 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="dinozaur.cpp" />
     <ClCompile Include="dress.cpp" />
+    <ClCompile Include="kot.cpp" />
     <ClCompile Include="list.cpp" />
+    <ClCompile Include="los.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="menu.cpp" />
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="pet.cpp" />
     <ClCompile Include="pet_cs.cpp" />
+    <ClCompile Include="pies.cpp" />
     <ClCompile Include="przeciwnik.cpp" />
     <ClCompile Include="RPS.cpp" />
     <ClCompile Include="Źródło.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="dinozaur.h" />
     <ClInclude Include="dress.h" />
     <ClInclude Include="extern.h" />
     <ClInclude Include="header.h" />
+    <ClInclude Include="kot.h" />
     <ClInclude Include="list.h" />
+    <ClInclude Include="los.h" />
     <ClInclude Include="menu.h" />
     <ClInclude Include="Nagłówek.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="pet.h" />
     <ClInclude Include="pet_cs.h" />
+    <ClInclude Include="pies.h" />
     <ClInclude Include="przeciwnik.h" />
     <ClInclude Include="RPS.h" />
   </ItemGroup>

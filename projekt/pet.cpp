@@ -1,8 +1,17 @@
-#include "header.h"
-#include "pet.h"
 #include "dress.h"
+#include "header.h"
 #include "extern.h"
+#include "pet.h"
 #include "list.h"
+
+void Pet::Set_type(int mtyp) {
+	logs << "ustawiono typ peta" << endl;
+	typ = mtyp;
+}
+
+int Pet::Get_type() const {
+	return typ;
+}
 
 void Pet::Set_name(string mName){
 	logs << "ustawiono imie peta" << endl;
@@ -23,6 +32,7 @@ void Pet::clear(){
 	Age = 0;
 	is_alive = 1;
 	dress_ = dress("brak",0,0);
+	typ = 0;
 	
 }
 
@@ -51,6 +61,7 @@ spet getinfo()
 	petinfo >> info.sdress_.nazwa;
 	petinfo >> info.sdress_.hp;
 	petinfo >> info.sdress_.att;
+	petinfo >> info.typ;
 	petinfo.close();
 	return info;
 }
@@ -66,6 +77,7 @@ Pet::Pet()
 	Age = info.Age;
 	is_alive = info.is_alive;
 	dress_.set(info.sdress_.nazwa, info.sdress_.hp, info.sdress_.att);
+	typ = info.typ;
 }
 
 void Pet::PassTime(double time)
@@ -95,7 +107,7 @@ void Pet::ChangeDress()
 {
 	logs << "uruchomiono funkcje PET::CHANGEDRESS" << endl;
 	system("CLS");
-	vector<dress> dresses;
+	list<dress> list;
 	ifstream dresslist("dress.txt");
 	dress tmp;
 	string nazwa;
@@ -105,14 +117,7 @@ void Pet::ChangeDress()
 		dresslist >> hp;
 		dresslist >> att;
 		tmp.set(nazwa, hp, att);
-		dresses.push_back(tmp);
-	}
-
-	list list;
-
-	for (size_t i = 0; i < dresses.size(); i++)
-	{
-		list.push(dresses[i]);
+		list.push(tmp);
 	}
 
 	cout << "wybierz stroj:" << endl;
@@ -129,6 +134,11 @@ void Pet::ChangeDress()
 			break;
 		}
 	}
+}
+
+bool Pet::Getis_alive() const
+{
+	return is_alive;
 }
 
 int Pet::GetMood() const
@@ -238,7 +248,33 @@ void Pet::Zapis()
 	petinfo << Age << endl;
 	petinfo << is_alive << endl;
 	petinfo << GetDress() << endl;
+	petinfo << typ << endl;
 	logs << "uruchomiono funkcje PET::ZAPIS" << endl;
 	logs << "----------- ZAMKNIECIE GRY" << endl;
 	petinfo.close();
+}
+
+int Pet::GetHunger() const
+{
+	return Hunger;
+}
+
+int Pet::GetBoredom() const
+{
+	return Boredom;
+}
+
+
+ostream& operator<<(ostream& os, const Pet& dt)
+{
+	os << dt.Name << endl
+		<< dt.Hunger << endl
+		<< dt.Boredom << endl
+		<< dt.is_Sick << endl
+		<< dt.Age << endl
+		<< dt.is_alive << endl
+		<< dt.dress_ << endl
+		<< dt.typ << endl;
+
+	return os;
 }

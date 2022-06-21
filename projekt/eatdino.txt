@@ -1,0 +1,3 @@
+jaskiniowiec 5
+mysz 2
+owoce 3

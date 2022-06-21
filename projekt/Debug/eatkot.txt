@@ -1,0 +1,3 @@
+ryba 4
+mysz 3
+mleko 4
