@@ -1,0 +1,15 @@
+﻿  lab1.cpp
+D:\MB\lab1\lab1\lab1.cpp(59,26): warning C4018: '<': signed/unsigned mismatch
+D:\MB\lab1\lab1\lab1.cpp(58): message : while compiling class template member function 'MyMatrix<int> MyMatrix<int>::add(MyMatrix<int> &)'
+D:\MB\lab1\lab1\lab1.cpp(102): message : see reference to function template instantiation 'MyMatrix<int> MyMatrix<int>::add(MyMatrix<int> &)' being compiled
+D:\MB\lab1\lab1\lab1.cpp(100): message : see reference to class template instantiation 'MyMatrix<int>' being compiled
+D:\MB\lab1\lab1\lab1.cpp(61,30): warning C4018: '<': signed/unsigned mismatch
+D:\MB\lab1\lab1\lab1.cpp(71,26): warning C4018: '<': signed/unsigned mismatch
+D:\MB\lab1\lab1\lab1.cpp(70): message : while compiling class template member function 'MyMatrix<int> MyMatrix<int>::sub(MyMatrix<int> &)'
+D:\MB\lab1\lab1\lab1.cpp(104): message : see reference to function template instantiation 'MyMatrix<int> MyMatrix<int>::sub(MyMatrix<int> &)' being compiled
+D:\MB\lab1\lab1\lab1.cpp(73,30): warning C4018: '<': signed/unsigned mismatch
+D:\MB\lab1\lab1\lab1.cpp(83,26): warning C4018: '<': signed/unsigned mismatch
+D:\MB\lab1\lab1\lab1.cpp(82): message : while compiling class template member function 'MyMatrix<int> MyMatrix<int>::mul(MyMatrix<int> &)'
+D:\MB\lab1\lab1\lab1.cpp(106): message : see reference to function template instantiation 'MyMatrix<int> MyMatrix<int>::mul(MyMatrix<int> &)' being compiled
+D:\MB\lab1\lab1\lab1.cpp(85,30): warning C4018: '<': signed/unsigned mismatch
+  lab1.vcxproj -> D:\MB\lab1\lab1\Debug\lab1.exe
